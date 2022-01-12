@@ -12,6 +12,7 @@ HTML5 includes detailed processing models to encourage more interoperable implem
 
 ## New API's
 In addition to specifying markup, HTML 5 specifies scripting application programming interfaces (APIs) that can be used with JavaScript. Existing Document Object Model (DOM) interfaces are extended and de facto features documented.
+
 ![Screenshot 2022-01-12 205708](https://user-images.githubusercontent.com/90320839/149170031-3f2784ea-038c-40af-a7fe-0e86eb2b516d.jpg)
 
 ## Error handling
