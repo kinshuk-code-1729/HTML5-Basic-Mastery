@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- We have two types of list in html -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Examples</title>
+</head>
+
+<body>
+    <!-- List types -->
+    <!-- The 1st one is <ul> (un-ordered list) -->
+    <h2>Top Programming Languages</h2>
+
+    <ul type="square">
+        <!-- The li element represents a list item. -->
+        <li>C++</li>
+        <li>JAVA</li>
+      
+        <!-- List within a list -->
+        <li>Python
+            <ul type="circle">
+                <li>Django</li>
+                <li>Flask</li>
+                <li>Sanic</li>
+            </ul>
+        </li>
+        
+        <li>Javascript
+            <ul type="disc">
+                <li>React</li>
+                <li>Angular</li>
+            </ul>
+        </li>
+        
+        <!-- The type attribute of <ul> has three different values : circle, disc & square. -->
+        <!-- If we didn't specify the type attribute, by Default type attribute takes disc as its value.  -->
+        <!-- The elements Python & Javascript of the list contain sub-lists or child-lists inside them -->
+        
+        <li>C#</li>
+   </ul> 
+
+   <!-- The 2nd one is <ol> (ordered list) -->
+       <h2>Top 5 Web Frameworks</h2>
+       
+       <!-- The type attribute of <ol> indicates the numbering type: 'a' indicates lowercase letters,'A' indicates uppercase letters,
+        'i' indicates lowercase Roman numerals,'I' indicates uppercase Roman numerals and '1' indicates numbers (default). -->
+
+       <ol type="a">
+           <li>Django</li>
+           <li>Angular</li>
+           <li>React</li>
+           <li>Laravel</li>
+           <li>Flask</li>
+       </ol>
+       
+</body>
+
+</html>

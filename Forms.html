@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Example</title>
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+
+    <!-- The form element represents a collection of form-associated elements,
+    some of which can represent editable values that can be submitted to a server for processing. -->
+
+    <!-- action attribute inside form tag is the URI of a program that processes the form information.
+    This value can be overridden by a formaction attribute on a <button> or <input> element. -->
+   
+    <!-- We can put any URL in it , it can be a servlet of JAVA , an xyz.php file or it can be any backend code
+    which is going to take the data sent from this form to that backend-->
+
+    <form action="any_backend_code">
+
+    <!-- <div> tag occupies the full space of a line and so text written after div tag is pushed to the next line. -->
+    <div>
+        <!-- "id" in input tag should match with "for" in label tag otherwise cursor will not populate  -->
+        <label for="st_name">Student Name : </label>
+        <input type="text" name="st_name" id="st_name" placeholder="Enter Your Name">
+        <!-- "id" should be same as of "name" attribute -->
+    </div>
+    <br>
+    <div>
+        <label for="st_age">Student Age : </label>
+        <input type="number" name="st_age" id="st_age" placeholder="Enter Your Age">
+    </div>
+    <br>
+    <div>
+        <label for="st_email">Email : </label>
+        <input type="email" name="st_email" id="st_email" placeholder="Enter Valid Email Address">
+    </div>
+    <br>
+    <div>
+        <label for="st_phno">Phone : </label>
+        <input type="number" name="st_phno" id="st_phno" placeholder="Enter 10-Digit Number">
+    </div>
+    <br>
+    <div>
+        Gender : Male <input type="radio" name="st_gender">
+        Female <input type="radio" name="st_gender">
+        Other <input type="radio" name="st_gender">
+    </div>
+    <br>
+    <div>
+        Are you 18 years old ?? : <input type="checkbox" name="st_eligibilty">
+    </div>
+    <br>
+    <div>
+        Date of Birth : <input type="date" name="st_dob">
+    </div>
+    <br>
+    <div>
+        <label for="st_passwd">Password : </label>
+        <input type="password" name="st_passwd" id="st_passwd" placeholder="At Least 8 Characters">
+    </div>
+    <br>
+    <div>
+        <label for="st_edu_desc">Educational Description : </label>
+        <br>
+        <textarea name="st_edu_desc" cols="60" rows="5" id="st_edu_desc" placeholder="Write Your Text Here ......"></textarea>
+    </div>
+    <br>
+    <div>
+        Qualification :
+        <select name="st_qualification">
+            <option value="Graduate">Graduate</option>
+            <option value="Under-Graduate">Under-Graduate</option>
+            <option value="12+">12+</option>
+            <option value="10+">10+</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        Upload a Profile Photo :  <input type="file" name="st_pic">
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="SUBMIT Form">
+        <input type="reset" value="RESET Form">
+    </div>
+    </form>    
+
+</body>
+
+</html>
