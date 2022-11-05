@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt in HTML</title>
+    <script type="text/javascript">
+            var val  = document.getElementsByTagName("p");
+            var val1  = document.getElementsByTagName("h1");
+            var val2  = document.getElementsByTagName("h2");
+            var val3  = document.getElementsByTagName("h3");
+        function checkp() {
+            alert("Number of paragraphs = "+val.length);
+        }
+        function checkh1() {
+            alert("Number of h1 = "+val1.length);
+        }
+        function checkh2() {
+            alert("Number of h2 = "+val2.length);
+        }
+        function checkh3() {
+            alert("Number of h3 = "+val3.length);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1>1st heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit eius quis fugit recusandae molestiae
+        omnis veniam, perferendis id repudiandae, tenetur incidunt laboriosam iste libero vitae quam, unde aliquid
+        neque!</p>
+    <h2>2nd heading</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ea cumque quibusdam commodi ut voluptatem
+        odio voluptate, excepturi repellat ipsam.</p>
+    <h3>3rd  heading</h3>
+    <input type="button" value="Click me" onclick="checkp();checkh1();checkh2();checkh3()">
+<!--     <br><br>
+    <input type="button" value="Click me" onclick="checkh1()">
+    <br><br>
+    <input type="button" value="Click me" onclick="checkh2()">
+    <br><br>
+    <input type="button" value="Click me" onclick="checkh3()"> -->
+</body>
+</html>

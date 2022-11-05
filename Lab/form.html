@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <table border="4px" align="center" bgcolor="cyan">
+    <form name="MyForm" action="#" method="get">
+        <tr>
+        <th>
+           Enter username
+        </th>
+        <th>
+            <input type="text" name="Username"> 
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <b>Enter password</b>
+        </td>
+        <td>
+            <input type="password" name="Password">
+        </td>
+    </tr>
+    <tr>
+        <td><b>Select user role</b></td>
+        <td><input type="checkbox" name="check" id="admin">Admin
+            <input type="checkbox" name="check" id="user">User</td>
+    </tr>
+    <tr>
+        <td><b>Select level</b></td>
+        <td>
+            <input type="radio" name="check" id="level1">Basic
+            <input type="radio" name="check" id="level2">Intermediate
+            <input type="radio" name="check" id="level3">Expert
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Enter user Role</b>
+        </td>
+        <td>
+            <input type="hidden" name="h" value="admin">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="image" src="R.jpg" alt="image">
+        </td>
+    </tr>
+    <tr>
+        <td>Insert a file</td>
+        <td>
+            <input type="file" name="file">
+        </td>
+    </tr>
+    <tr>
+        <td>Enter DOB</td>
+        <td>
+            <input type="date" name="date">
+        </td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td><textarea name="textbox" cols="30" rows="10"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <input type="button" value="button">
+            <input type="submit" value="Submit">  
+            <input type="reset" value="Reset">
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Select your preferred language
+        </th>
+        <td>
+            <select name="PL" size="4">
+                <option value="Java">Java</option>
+                <option value="Python" checked>Python</option>
+                <option value="C++">C++</option>
+                <option value="Ruby">Ruby</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Dropdown List
+        </th>
+        <td> 
+            <!-- size="1" converts the select into Dropdown List -->
+            <select name="PL" size="1">
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="C++">C++</option>
+                <option value="Ruby">Ruby</option>
+            </select>
+        </td>
+    </tr>
+    </form>
+</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML</title>
+    <script>            
+    var dynamicContent = "Enter User Name : <br> <input type='text'>";
+        function callfunc(){
+             document.getElementById("b").innerHTML  = dynamicContent;
+        }
+    </script>
+</head>
+<body>
+    <div id="a">
+        <input type="button" onclick="callfunc()" value="Click Me">
+    </div>
+    <div id="b">
+    </div>
+</body>
+</html>

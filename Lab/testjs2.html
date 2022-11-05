@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JavaScript objects</title>
+    <script type="text/javascript">
+        var id,cname,loc;
+        function callobj(id,cname,loc)
+        {
+            this.id = id;
+            this.cname = cname;
+            this.loc = loc;
+        }
+        e = new callobj(132,"Persistent","Hyderabad");
+        document.write(e.id);
+        document.write("<br>"+e.cname);
+        document.write("<br>"+e.loc);
+    </script>
+</head>
+<body>
+</body>
+</html>
