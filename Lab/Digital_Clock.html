@@ -14,6 +14,9 @@
             var Today = new Date();
             var hrs = Today.getHours();
             var mins = Today.getMinutes();
+            var meridian = hrs >= 12 ? 'PM' : 'AM';
+            hrs = hrs % 12;
+            hrs = hrs ? hrs : 12; // the hour '0' should be '12'
             var secs = Today.getSeconds();
             var milsecs = Today.getMilliseconds();
             hrs = checkTime(hrs);
@@ -21,7 +24,7 @@
             secs = checkTime(secs);
             milsecs = checkTime(milsecs);
 
-            document.getElementById("text").innerHTML = hrs + " : " + mins + " : "+secs+" : " + milsecs;
+            document.getElementById("text").innerHTML = hrs + " : " + mins + " : "+secs+" : " + milsecs +" "+meridian;
             setInterval("getTime()",1000);
         }
         function checkTime(i){
