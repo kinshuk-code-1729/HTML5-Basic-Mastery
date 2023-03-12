@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript">
+    function validate(mail){
+        var exp = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if(mail.value.match(exp)){
+            alert("Valid Email Address !!!!");
+            return true;
+        }
+        else{
+            alert("Invalid email address !!!!!");
+            return false;
+        }
+    }    
+</script> 
+</head>
+<body>
+<div>
+<h2>Email Validation</h2>
+<form name="evform" action="#"> 
+Email: <input type="text" name="email"/></br></br>
+<input type="submit" name="submit" value="Submit" onclick="validate(document.evform.email)">
+</form>
+</div>
+</body>
+</html>

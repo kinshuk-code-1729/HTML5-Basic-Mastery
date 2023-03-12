@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+    <script type="text/javascript">
+        function product()
+        {
+            // var x = document.myform.num1.value;
+            // var y = document.myform.num2.value;
+            var x = document.getElementById("v1").value;
+            var y = document.getElementById("v2").value;
+            var z = x * y;
+            alert("product = "+z);
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <h3>Enter val 1</h3>
+        <br>
+        <input type="number" id="v1"> <!--name can also be used-->
+        <br><br><br>
+        <h3>Enter val 2</h3>
+        <br>
+        <input type="number" id="v2">
+        <br><br><br>
+        <input type="button" value="Submit" onclick="product()">
+    </form>
+</body>
+</html>
